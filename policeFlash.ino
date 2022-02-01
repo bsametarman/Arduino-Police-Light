@@ -15,7 +15,7 @@ void setup() {
 
 // ---------------------------------------------
 
-void animDegisKontrol()
+void animChangeControl()
 {
    if(digitalRead(A0) == true)
    {
@@ -29,7 +29,7 @@ void animDegisKontrol()
 
 // ---------------------------------------------
 
-void kapatAcKontrol()
+void onOffControl()
 {
    if(digitalRead(A2) == true)
    {
@@ -43,7 +43,7 @@ void kapatAcKontrol()
 
 // ---------------------------------------------
 
-void kapali()
+void turnOff()
 {
   for(int i = 2; i <= 11; i++)
   {
@@ -442,9 +442,9 @@ void anim8()
 
 void loop() {
 
- animDegisKontrol();
+ animChangeControl();
 
- kapatAcKontrol();
+ onOffControl();
 
 if (closeKey == 1)
 {
